@@ -56,7 +56,7 @@ textarea:focus {
 }
 
 .active{
-    border-bottom: 3px solid #ffff;
+    border-bottom: 1px solid #ffff !important;
 }
 .loader {
     position: fixed;
@@ -148,6 +148,7 @@ a {
     font-weight: 800 !important;
     margin-right: 2rem;
     transition: all 0.4s;
+    border-bottom: 1px solid transparent;
 }
 
 .nav-link:active {
@@ -155,7 +156,7 @@ a {
 }
 
 .nav-link:hover{
-    border-bottom: 3px solid #fff;
+    border-bottom: 1px solid #fff;
     transition: all 0.4s;
     text-shadow: 2rem 3rem 4rem rgb(0 0 0 / 68%) !important;
 }
@@ -176,7 +177,7 @@ a {
 
 /* section-1 */
 .section-1 {
-    background-image: url('/assets/images/bg-mobile.png');
+    background-image: url('../images/bg-mobile.png');
     background-color: #EA5B5C;
     min-height: 80vh;
     object-fit: cover;
@@ -248,6 +249,19 @@ a {
         min-height: 40vh;
     }
 
+    .nav-link:hover{
+        border-bottom: none;
+        transition: all 0.4s;
+        text-shadow: 2rem 3rem 4rem rgb(0 0 0 / 68%) !important;
+    }
+    .active{
+        border-bottom: none;
+        padding: .2rem .5rem .2rem .5rem !important;
+        color: #EA5B5C !important;
+        background-color: #fff;
+        width: 8.5rem;
+        border-radius: 6px;
+    }
     .setction-1-title {
         font-size: 1.3rem !important;
     }
@@ -321,7 +335,7 @@ a {
 
 /* section-2 */
 .section-2 {
-    background-image: url('/assets/images/bg-logo.png');
+    background-image: url('../images/bg-logo.png');
     min-height: 400px;
     background-position: left center;
     background-repeat: no-repeat;
@@ -439,7 +453,7 @@ a {
 
 /* section-4 */
 .section-4 {
-    background-image: url('/assets/images/bg-map-large.png');
+    background-image: url('../images/bg-map-large.png');
     height: 80vh;
     object-fit: cover;
     background-size: cover;
@@ -695,7 +709,7 @@ a {
 
 .contact_us_section_1::before {
     content: "";
-    background-image: url('/assets/images/bg-map-large.png');
+    background-image: url('../images/bg-map-large.png');
     object-fit: cover;
     background-size: cover;
     background-position: center center;
