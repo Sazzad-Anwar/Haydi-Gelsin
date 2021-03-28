@@ -37,13 +37,16 @@ input[type=number]:focus,
 input[type=password]:focus,
 input[type=text]:focus,
 textarea.form-control:focus,
-textarea:focus {
+textarea:focus,
+.form-select:focus {
     box-shadow: inset 0 -1px 0 #ddd !important;
+    border-color: #808080;
 }
 
-*,body {
-    font-family: 'avenir', sans-serif;
+*,body,h1,h2,h3,h4,h5,h6,p,a {
+    font-family: 'avenir', sans-serif !important;
 }
+
 
 .uk-checkbox:checked,
 .uk-checkbox:indeterminate,
@@ -53,6 +56,11 @@ textarea:focus {
 
 #navbar #logo {
     transition: 0.4s;
+}
+
+.extra-space-for-animation{
+    height: 116px;
+    background-color: #EA5B5C;
 }
 
 .active{
@@ -122,6 +130,13 @@ textarea:focus {
     }
 }
 
+@media (max-width: 768px) {
+    .extra-space-for-animation{
+        height: 56px;
+        background-color: #EA5B5C;
+    }
+}
+
 /* nav-bar style */
 
 a {
@@ -139,6 +154,14 @@ a {
 
 .text-white {
     color: #fff !important;
+}
+
+#navbar{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition: all .3s;
+    z-index: 100;
 }
 
 .nav-link {
@@ -414,7 +437,7 @@ a {
     border-radius: 30px !important;
     color: #fff !important;
     font-weight: 900 !important;
-    font-size: 1.3rem !important;
+    font-size: 1rem !important;
     text-transform: uppercase;
     border: none !important;
     margin-bottom: 8rem !important;
@@ -557,7 +580,7 @@ a {
 .registration-section .title {
     font-weight: 800;
     text-transform: uppercase;
-    font-size: 2.5rem;
+    font-size: 2rem;
 }
 
 .registration-section .sub-title {
@@ -577,7 +600,7 @@ a {
     margin: 1.2rem 0;
 }
 
-.input-area .input {
+.input-area .input  {
     border-top: none;
     border-left: none;
     border-right: none;
@@ -595,6 +618,20 @@ a {
     transition: bottom 0.3s !important;
     font-size: 0.9rem;
     color: #8D8D8B;
+}
+
+.custom-input-textarea-registration {
+    background-color: #F7F5F5 !important;
+    border: 1px solid #e4e4e4 !important;
+    font-size: .9rem !important;
+    padding-left: .5rem !important;
+    color: #686868 !important;
+}
+
+.custom-input-textarea-registration:focus {
+    outline: none;
+    border: 1px solid #e4e4e4 !important;
+    background-color: #F7F5F5 !important;
 }
 
 .forgot-password {
@@ -669,6 +706,25 @@ a {
     margin-right: 40px;
 }
 
+.form-select{
+    border-left: none !important;
+    border-right: none !important;
+    border-top: none !important;
+    border-bottom: 1px solid #808080;
+    border-radius: 0 !important;
+    /* color: #8D8D8B; */
+    padding: 0 10px;
+}
+
+.form-label-select{
+    position: absolute !important;
+    bottom: 1.5rem !important;
+    transition: bottom 0.3s !important;
+    font-size: 0.9rem;
+    color: #8D8D8B;
+}
+
+
 /* // Small devices (landscape phones, 576px and up) */
 @media (max-width: 576px) {
     .margin-x-40px {
@@ -710,6 +766,7 @@ a {
 .contact_us_section_1::before {
     content: "";
     background-image: url('../images/bg-map-large.png');
+    background-attachment: fixed;
     object-fit: cover;
     background-size: cover;
     background-position: center center;
@@ -843,3 +900,30 @@ textarea.custom-input-textarea:focus {
 
 /* contact_us_section-2 end */
 /* contact_us page end */
+
+/* privacy policy page */
+.privacy-policy h1{
+    font-weight: 700;
+    font-size: 2rem;
+    color: #110d30 !important;
+    text-transform: uppercase;
+}
+
+.policy{
+    margin: 3rem 0;
+}
+
+.title{
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: #110d30 !important;
+}
+
+.paragraph{
+    line-height: 1.7rem;
+    font-size: 1.1rem;
+    color: #5a5656;
+    align-self: center;
+}
+
+/* privacy policy page end */
