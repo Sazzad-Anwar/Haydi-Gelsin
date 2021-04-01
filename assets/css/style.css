@@ -194,6 +194,10 @@ a {
 .logo {
     height: 100px;
     margin-top: -12px;
+    padding: 10px 28px;
+    background-color: #ffffff;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
 }
 
 /* nav-bar style end */
@@ -290,7 +294,9 @@ a {
     }
 
     .logo {
-        height: 60px;
+        height: 80px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
     }
 
     .nav-link {
@@ -911,6 +917,10 @@ textarea.custom-input-textarea:focus {
 
 .policy{
     margin: 3rem 0;
+}
+
+.policy .title{
+    margin-bottom: 1rem;
 }
 
 .title{
