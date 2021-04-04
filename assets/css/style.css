@@ -58,6 +58,10 @@ textarea:focus,
     transition: 0.4s;
 }
 
+.bottom-logo{
+    height: 10rem;
+}
+
 .extra-space-for-animation{
     height: 116px;
     background-color: #EA5B5C;
@@ -892,7 +896,7 @@ textarea.custom-input-textarea:focus {
     }
 
     .contact_us_right .form-title {
-        font-size: 1.3rem !important;
+        font-size: 1rem !important;
     }
 
     .contact_us_right .form-subtitle {
