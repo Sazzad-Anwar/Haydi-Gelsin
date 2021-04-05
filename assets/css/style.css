@@ -372,6 +372,8 @@ a {
     min-height: 400px;
     background-position: left center;
     background-repeat: no-repeat;
+    padding-top: 1rem;
+
 }
 
 .section-2 h1 {
