@@ -518,10 +518,6 @@ a {
     color: #fff;
 }
 
-.transition {
-    transition: all .5s
-}
-
 .link-item li {
     font-size: .9rem;
     transition: transform .5s;
@@ -531,29 +527,56 @@ a {
     transform: scale(.95);
 }
 
+.link-item li a {
+    font-size: .8rem;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.transition {
+    transition: all .5s
+}
+
+.footer-link a {
+    font-size: .9rem;
+    transition: transform .5s;
+}
+
+.footer-link a:active {
+    transform: scale(.95);
+}
+
 .padding-left-right-0 {
     padding-left: 0 !important;
     padding-right: 0 !important;
 }
 
-.footer .uk-card h3 {
+.footer h3 {
     font-size: 1rem;
     font-weight: 900;
     text-transform: uppercase;
+    
 }
 
 .align-center {
     align-items: center;
 }
 
-.footer .uk-card address {
+.footer-address{
+    position: absolute;
+    top: 50%;
+    transform: translate(10px, -50%);
+    text-align: center;
+}
+
+.footer address {
     font-size: .8rem;
     text-transform: uppercase;
     font-weight: normal;
 }
 
-.footer .uk-card address,
-.footer .uk-card h3 {
+.footer address,
+.footer h3 {
     color: #fff;
 }
 
@@ -562,14 +585,25 @@ a {
 }
 
 .copyright {
-    padding-right: 0 !important;
-    padding-left: 4rem !important;
+    font-size: .7rem !important;
+    padding: .5rem !important
 }
 
-.link-item li a {
+.footer-link{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    transform: translate(10px, -50%);
+}
+
+.footer-link a {
     font-size: .8rem;
     font-weight: 900;
     text-transform: uppercase;
+    
 }
 
 @media (max-width: 576px) {
