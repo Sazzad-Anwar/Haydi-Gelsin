@@ -89,6 +89,8 @@ textarea:focus,
     position: relative;
 }
 
+
+
 .double-bounce1,
 .double-bounce2 {
     width: 100%;
@@ -943,3 +945,34 @@ textarea.custom-input-textarea:focus {
 }
 
 /* privacy policy page end */
+
+.about_us_section-1 .intro, .about_us_section-2 .intro{
+    font-size: 17px;
+    font-family: "avenir-light" !important;
+    text-transform: uppercase;
+    font-weight: 100;
+}
+
+.about_us_section-2{
+    background-color: #E8E7E7;
+}
+
+.about_us_section-2 h1{
+    color: #EA5B5C;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.about_us_section-2 .list-group .list-group-item{
+    border: none !important;
+    border: 0px !important;
+    background-color: transparent !important;
+    text-transform: uppercase !important;
+    padding: 5px 0;
+}
+
+.about_us_section-3 h2{
+    text-transform: uppercase;
+}
+
+/* about_us end */
