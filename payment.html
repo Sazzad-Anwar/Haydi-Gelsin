@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <link rel="icon" href="./assets/images/heydi-Logo-top.png" type="image/png" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="./assets/css/style.css" />
+        <link rel="stylesheet" href="./assets/css/uikit.css" />
+        <link rel="stylesheet" href="./assets/css/aos.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        />
+        <script src="./assets/js/aos.js"></script>
+        <title>Haydi Gelsin | Payment</title>
+    </head>
+    <body>
+        <div class="wrapper payment">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-4"></div>
+                    <div class="col-12 col-md-4">
+                        <div class="mt-5">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="payment__logo my-5">
+                                        <img
+                                            src="./assets/images/payment-logo.png"
+                                            alt="payment-logo"
+                                        />
+                                    </div>
+
+                                    <p class="text-colored fw-bolder">
+                                        Total Amount:
+                                        <span class="text-dark"> 150 TL (KDV included)</span>
+                                    </p>
+
+                                    <p class="text-colored fw-bolder mb-1 pb-0 mt-4">
+                                        Payee Details
+                                    </p>
+                                    <form action="">
+                                        <input
+                                            type="text"
+                                            class="form-control mb-2"
+                                            id="name"
+                                            placeholder="name"
+                                        />
+                                        <input
+                                            type="email"
+                                            class="form-control"
+                                            id="email"
+                                            placeholder="Email"
+                                        />
+
+                                        <p class="text-colored fw-bolder mb-1 pb-0 mt-4">
+                                            Card Details
+                                        </p>
+                                        <div class="input-group mb-2">
+                                            <input
+                                                type="text"
+                                                class="form-control visa-card"
+                                                placeholder="Card Number"
+                                                aria-label="Recipient's username"
+                                                aria-describedby="input-image"
+                                            />
+                                            <span class="input-group-text" id="input-image">
+                                                <img
+                                                    src="./assets/images/visa.png"
+                                                    alt="visa-card"
+                                                />
+                                            </span>
+                                        </div>
+                                        <div
+                                            class="
+                                                d-flex
+                                                justify-content-between
+                                                align-items-center
+                                            "
+                                        >
+                                            <input
+                                                type="text"
+                                                onfocus="(this.type='date')"
+                                                onblur="(this.type='text')"
+                                                class="form-control w-50"
+                                                id="expiry_date"
+                                                placeholder="Expiry Date"
+                                            />
+                                            <input
+                                                type="text"
+                                                onfocus="(this.type='number')"
+                                                onblur="(this.type='text')"
+                                                class="form-control w-25"
+                                                id="cvv"
+                                                placeholder="CVV"
+                                            />
+                                        </div>
+
+                                        <div class="d-grid gap-2 mt-5">
+                                            <button class="btn submit-btn" type="submit">
+                                                Proceed to Pay
+                                            </button>
+                                        </div>
+                                    </form>
+
+                                    <div class="mt-3 terms_link text-center">
+                                        <p class="p-0 m-0">
+                                            By clicking proceed to pay, I am agreeing with
+                                        </p>
+                                        <a href="/" class="text-colored">Terms & Condition</a>
+                                    </div>
+
+                                    <div class="d-flex justify-content-end align-items-center">
+                                        <img
+                                            src="./assets/images/visa.png"
+                                            class="me-2"
+                                            alt="visa-card"
+                                        />
+                                        <img src="./assets/images/master.png" alt="master-card" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- scripts -->
+        <script src="./assets/js/aos.js"></script>
+        <script src="./assets/js/main.js"></script>
+        <script src="./assets/js/bootstrap.min.js"></script>
+        <script src="./assets/js/uikit.js"></script>
+        <script src="./assets/js/uikit-icons.js"></script>
+        <script>
+            AOS.init();
+        </script>
+    </body>
+</html>
