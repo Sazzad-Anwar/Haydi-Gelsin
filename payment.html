@@ -8,7 +8,13 @@
         <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
         <link rel="stylesheet" href="./assets/css/style.css" />
         <link rel="stylesheet" href="./assets/css/uikit.css" />
-        <link rel="stylesheet" href="./assets/css/aos.css" />
+        <!-- animate css -->
+        <link rel="stylesheet" href="./assets/css/animate.css" />
+        <!-- owl carousel css -->
+        <link rel="stylesheet" href="./assets/css/owl.carousel.min.css" />
+        <!-- owl carousel theme css -->
+        <link rel="stylesheet" href="./assets/css/owl.theme.default.min.css" />
+        <!-- <link rel="stylesheet" href="./assets/css/aos.css" /> -->
         <link
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
@@ -81,8 +87,7 @@
                                         >
                                             <input
                                                 type="text"
-                                                onfocus="(this.type='date')"
-                                                onblur="(this.type='text')"
+                                                onkeypress="setYear()"
                                                 class="form-control w-50"
                                                 id="expiry_date"
                                                 placeholder="Expiry Date"
@@ -129,6 +134,15 @@
         </div>
 
         <!-- scripts -->
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+            referrerpolicy="no-referrer"
+        ></script>
+        <!-- <script src="./assets/js/aos.js"></script> -->
+        <!-- owl carousel -->
+        <script src="./assets/js/owl.carousel.min.js"></script>
+        <!-- wow scroll effect -->
+        <script defer src="./assets/js/wow.js"></script>
         <script src="./assets/js/aos.js"></script>
         <script src="./assets/js/main.js"></script>
         <script src="./assets/js/bootstrap.min.js"></script>
@@ -136,6 +150,17 @@
         <script src="./assets/js/uikit-icons.js"></script>
         <script>
             AOS.init();
+            const setYear = () => {
+                let monthInput = document.getElementById('expiry_date');
+
+                if (!isNaN(monthInput.value) && monthInput.value.length >= 2) {
+                    monthInput.value = monthInput.value + '-';
+                }
+                console.log(monthInput.value.length);
+                if (monthInput.value.length > 6) {
+                    monthInput.value = monthInput.value.slice(0, 6);
+                }
+            };
         </script>
     </body>
 </html>

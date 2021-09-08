@@ -1,4 +1,27 @@
 
+$(document).ready(function () {
+  new WOW().init();
+  $('.owl-carousel').owlCarousel({
+    loop: true,
+    margin: 50,
+    nav: false,
+    dots: true,
+    autoplay: true,
+    autoplayTimeout: 2000,
+    responsive: {
+      0: {
+        items: 1
+      },
+      600: {
+        items: 3
+      },
+      1000: {
+        items: 5
+      }
+    }
+  })
+});
+
 // preloader
 setTimeout(() => {
   document.querySelector('.loader').style.display = "none"
@@ -28,4 +51,3 @@ function scrollFunction() {
 if (window.innerWidth > 768) {
   window.onscroll = function () { scrollFunction() };
 }
-
