@@ -187,12 +187,12 @@ a {
 }
 
 .logo {
-    height: 100px;
-    margin-top: -12px;
-    padding: 10px 28px;
-    background-color: #ffffff;
+    height: 80px;
+    margin-top: 10px;
+    padding: 15px 28px;
+    /* background-color: #ffffff;
     border-bottom-left-radius: 25px;
-    border-bottom-right-radius: 25px;
+    border-bottom-right-radius: 25px; */
 }
 
 /* nav-bar style end */
