@@ -3,14 +3,14 @@ $(document).ready(function () {
   new WOW().init();
   $('.owl-carousel').owlCarousel({
     loop: true,
-    margin: 50,
+    margin: 10,
     nav: false,
     dots: true,
     autoplay: true,
     autoplayTimeout: 2000,
     responsive: {
-      0: {
-        items: 1
+      320: {
+        items: 2
       },
       600: {
         items: 3
@@ -39,12 +39,11 @@ function force_focus() {
 // Function for scroll to down and top effect for header
 function scrollFunction() {
   if (document.body.scrollTop >= 40 || document.documentElement.scrollTop >= 40) {
-    document.getElementById("navbar").style.height = "5rem";
-    document.getElementById("logo").style.height = "5.5rem";
+    document.getElementById("logo").style.height = "80px";
     document.getElementById("navbar").classList.add('shadow-lg');
   } else {
-    document.getElementById("navbar").style.height = "auto";
-    document.getElementById("logo").style.height = "100px";
+    document.getElementById("logo").style.paddingRight = "0px";
+    document.getElementById("logo").style.height = "90px";
     document.getElementById("navbar").classList.remove('shadow-lg');
   }
 }

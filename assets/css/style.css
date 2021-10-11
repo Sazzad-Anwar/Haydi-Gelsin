@@ -47,7 +47,12 @@ a {
     background-color: #ee2f65 !important;
 }
 
+#navbar {
+    height: 5rem;
+}
+
 #navbar #logo {
+    height: 90px;
     transition: 0.4s;
 }
 
@@ -1323,6 +1328,9 @@ textarea.custom-input-textarea:focus {
 @media screen and (min-width: 320px) and (max-width: 991px) {
     .payment .card {
         width: 100%;
+    }
+    #navbar {
+        height: auto;
     }
 }
 
