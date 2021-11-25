@@ -29,6 +29,7 @@ textarea:focus,
     font-family: 'tahoma';
 }
 
+*,
 body {
     font-family: 'tahoma' !important;
 }
