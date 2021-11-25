@@ -20,6 +20,19 @@ $(document).ready(function () {
       }
     }
   })
+
+
+  $('.navbar-toggler').on('click', () => {
+
+    if ($('.menu__icon').attr('uk-icon') === "icon: menu; ratio: 2") {
+      $('.menu__icon').attr('uk-icon', "icon: close; ratio: 2");
+      $('.navbar.navbar-expand-lg').attr('style', 'box-shadow: 0 1rem 3rem rgba(0, 0, 0, .5)!important;');
+    } else {
+      $('.menu__icon').attr('uk-icon', "icon: menu; ratio: 2");
+      $('.navbar.navbar-expand-lg').attr('style', 'box-shadow:none')
+    }
+  })
+
 });
 
 // preloader

@@ -1,9 +1,9 @@
 /*************************
- AVENIR
+ tahoma
  *************************/
 @font-face {
-    font-family: Avenir;
-    src: url('./fonts/Avenir.ttc') format('TTC');
+    font-family: tahoma;
+    src: url('./fonts/tahoma.ttc') format('TTC');
 }
 
 [contenteditable].form-control:focus,
@@ -26,7 +26,7 @@ textarea:focus,
 }
 
 :root {
-    font-family: Avenir;
+    font-family: 'tahoma';
 }
 
 body {
@@ -70,7 +70,7 @@ body {
 }
 
 .extra-space-for-animation {
-    height: 116px;
+    height: 100px;
     background-color: #ee2f65;
 }
 
@@ -179,18 +179,47 @@ a {
     font-weight: 800 !important;
     margin-right: 2rem;
     transition: all 0.4s;
-    border-bottom: 1px solid transparent;
 }
 
 .nav-link:active {
     transform: scale(0.95);
 }
 
-.nav-link:hover {
+.nav-link {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    top: 40px;
+    height: 3px;
+    width: 0%;
+    background-color: #fff;
+    transition: width 0.4s linear;
+}
+
+.nav-link:hover::after {
+    content: '';
+    width: 90%;
+}
+
+@media (max-width: 991px) {
+    .nav-link::after {
+        content: '';
+        background-color: transparent;
+    }
+    .logo {
+        padding: 15px 0px !important;
+    }
+}
+/* .nav-link:hover {
     border-bottom: 1px solid #fff;
     transition: all 0.4s;
     text-shadow: 2rem 3rem 4rem rgb(0 0 0 / 68%) !important;
-}
+} */
 
 .btn:focus,
 .navbar-toggler:focus {
@@ -261,7 +290,7 @@ a {
     color: #ffff;
     font-size: 1rem;
     font-weight: 900;
-    font-family: 'avenir-heavy', sans-serif;
+    font-family: 'tahoma', sans-serif;
 
     margin-top: 3rem;
 }
@@ -447,8 +476,7 @@ a {
 .body-text {
     font-size: 0.9rem !important;
     color: #202020;
-
-    font-family: 'avenir', sans-serif !important;
+    font-family: 'tahoma', sans-serif !important;
     font-weight: 900;
 }
 
@@ -1234,7 +1262,7 @@ textarea.custom-input-textarea:focus {
 .about_us_section-1 .intro,
 .about_us_section-2 .intro {
     font-size: 17px;
-    font-family: 'avenir-light' !important;
+    font-family: 'tahoma-light' !important;
 
     font-weight: 100;
 }
