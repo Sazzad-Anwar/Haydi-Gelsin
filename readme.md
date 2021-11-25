@@ -14,6 +14,6 @@
 -   Wow Animation
 -   Owl Carousel
 
-[Click to see project](https://sazzad-anwar.github.io/Haydi-Gelsin)
+[Click to see project](https://haydi-gelsin.com)
 
 <img src="./index.png" />
