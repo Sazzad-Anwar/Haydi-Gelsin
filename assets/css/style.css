@@ -341,8 +341,6 @@ a {
 
     .logo {
         height: 80px;
-        border-bottom-left-radius: 20px;
-        border-bottom-right-radius: 20px;
     }
 
     .nav-link {
@@ -370,6 +368,7 @@ a {
     .download-btn {
         display: flex;
         flex-direction: row;
+        justify-content: center;
     }
 
     .download-btn a img {
@@ -633,6 +632,7 @@ a {
     }
     .download__app__section .p {
         width: 100%;
+        text-align: center;
     }
 
     .get__app__link {
@@ -704,8 +704,7 @@ a {
 }
 
 .footer address {
-    font-size: 0.8rem;
-
+    font-size: 0.75rem;
     font-weight: normal;
 }
 
@@ -1268,14 +1267,14 @@ textarea.custom-input-textarea:focus {
     font-weight: 100;
 }
 
-.about_us_section-2 {
+/* .about_us_section-2 {
     background-color: #e8e7e7;
-}
+} */
 
-.about_us_section-2 h1 {
+/* .about_us_section-2 h1 {
     color: #ee2f65;
     font-weight: 800;
-}
+} */
 
 .about_us_section-2 .list-group .list-group-item {
     border: none !important;
