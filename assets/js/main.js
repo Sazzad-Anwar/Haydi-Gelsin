@@ -49,21 +49,6 @@ function force_focus() {
   }
 }
 
-// Function for scroll to down and top effect for header
-// function scrollFunction() {
-//   if (document.body.scrollTop >= 40 || document.documentElement.scrollTop >= 40) {
-//     document.getElementById("logo").style.height = "80px";
-//     document.getElementById("navbar").classList.add('shadow-lg');
-//   } else {
-//     document.getElementById("logo").style.paddingRight = "0px";
-//     document.getElementById("logo").style.height = "90px";
-//     document.getElementById("navbar").classList.remove('shadow-lg');
-//   }
-// }
-// if (window.innerWidth > 768) {
-//   window.onscroll = function () { scrollFunction() };
-// }
-
 window.addEventListener('scroll', e => {
   let scroll = window.scrollY;
   if (scroll > 40) {
